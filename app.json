@@ -5,11 +5,37 @@
   ],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "债记通",
     "navigationBarBackgroundColor": "#ffffff"
   },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志"
+      }
+    ]
+  },
   "style": "v2",
+ 
   "componentFramework": "glass-easel",
   "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents"
+  "lazyCodeLoading": "requiredComponents",
+  "permission": {
+    "scope": {
+      "camera": {
+        "desc": "您的使用涉及到摄像头功能，请授权使用摄像头"
+      },
+      "record": {
+        "desc": "您的使用涉及到麦克风功能，请授权使用麦克风"
+      },
+      "userInfo": {
+        "desc": "需要您授权个人信息才能征程使用系统功能"
+      }
+    }
+  }
 }
