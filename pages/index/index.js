@@ -17,6 +17,15 @@ Page({
       url: '../logs/logs'
     })
   },
+  changeMotto() {
+    if (this.data.motto === 'Hello World') {
+      console.log("motto hello")
+      this.setData({ motto : '你好世界！' })
+    } else {
+      console.log("motto 你好")
+      this.setData({ motto : 'Hello World'})
+    }
+  },
   onChooseAvatar(e) {
     const { avatarUrl } = e.detail
     const { nickName } = this.data.userInfo
